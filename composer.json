@@ -1,0 +1,49 @@
+{
+    "name": "3x1io/log-module",
+    "description": "Log Viewer for VILT Stack using Laravel Log Reader",
+    "type": "laravel-module",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "VILT",
+        "log",
+        "log-viewer",
+        "resource",
+        "page",
+        "vilt-admin",
+        "Vilt stack",
+        "admin panel",
+        "admin one",
+        "vuejs",
+        "ineriajs",
+        "tailwind.css"
+    ],
+    "homepage": "https://3x1.io",
+    "authors": [
+        {
+            "name": "Fady Mondy",
+            "email": "info@3x1.io",
+            "role": "Senior Fullstack Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "queents/vilt": "^1.0",
+        "3x1io/filamentui": "^1.0",
+        "calebporzio/sushi": "^2.3",
+        "jackiedo/log-reader": "^2.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Log\\": ""
+        }
+    }
+}
