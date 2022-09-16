@@ -29,7 +29,7 @@
     "require": {
         "php": "^8.0",
         "queents/vilt": "^1.0",
-        "3x1io/filamentui": "^1.0",
+        "3x1io/filamentui-module": "^1.0",
         "calebporzio/sushi": "^2.3",
         "jackiedo/log-reader": "^2.2"
     },
