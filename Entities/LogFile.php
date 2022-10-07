@@ -18,8 +18,9 @@ class LogFile extends Model
         'name' => 'string',
         'path' => 'string',
     ];
-
     protected $table = 'logs';
+
+    protected ?array $rows;
 
     public function getRows()
     {
@@ -28,16 +29,16 @@ class LogFile extends Model
         if($logFiles)
         {
             foreach ($logFiles as $key => $value) {
-                $rows[] =[
+                $this->rows[] =[
                     'id' => $i++,
                     'name' => $key,
                     'path' => $value,
                 ];
             }
         } else {
-            $rows = [];
+            $this->rows = [];
         }
 
-        return $rows;
+        return $this->rows;
     }
 }
