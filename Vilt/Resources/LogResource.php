@@ -24,6 +24,12 @@ class LogResource extends Resource
     public ?string $module = "Log";
     public ?bool $api = true;
 
+    public function __construct()
+    {
+        $this->table="logs";
+        $this->view="Resource";
+    }
+
     public function rows():array
     {
         $this->canCreate = false;

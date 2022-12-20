@@ -18,7 +18,6 @@ class LogFile extends Model
         'name' => 'string',
         'path' => 'string',
     ];
-    protected $table = 'logs';
 
     protected ?array $rows;
 
@@ -40,5 +39,10 @@ class LogFile extends Model
         }
 
         return $this->rows;
+    }
+
+    protected function sushiShouldCache()
+    {
+        return false;
     }
 }
